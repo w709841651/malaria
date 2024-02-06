@@ -1,6 +1,6 @@
 1.1clone: download software and data
 
-1.2creat_dataset.ipynb:  creat .npy files according to the readme file
+1.2creat_dataset.ipynb:  creat .npy files in my_dataset according to the readme file
 
 my_dataset:        my own dataset 
 
