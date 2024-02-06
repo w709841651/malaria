@@ -1,10 +1,8 @@
-1.1
+1.1clone: download software and data
 1.2creat_dataset.ipynb:  creat .npy files according to the readme file 
 my_dataset:        my own dataset 
 classif-cat-large-0-road-safety: their dataset(can operate normally)
 0-kl-tuning.toml:  this file was copied from exp/tabr/why/classif-cat-large-0-road-safety/0-tuning.toml and i only changed the path 
-
-
 
 run:   CUDA_VISIBLE_DEVICES=0 srun -p 10-10-10-17 python bin/go.py exp/0-kl-tuning.toml --force
 
