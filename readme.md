@@ -4,7 +4,7 @@
 
 my_dataset:        my own dataset 
 
-classif-cat-large-0-road-safety: their dataset(can operate normally)
+classif-cat-large-0-road-safety: their dataset(can operate normally) There are a lot of different datasets in their data folder, and I chose classif-cat-large-0-road-safety, which seems to match my data type
 
 0-kl-tuning.toml:  this file was copied from exp/tabr/why/classif-cat-large-0-road-safety/0-tuning.toml and i only changed the path 
 
