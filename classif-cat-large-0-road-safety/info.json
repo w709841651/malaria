@@ -1,0 +1,10 @@
+{
+    "name": "classif-cat-large-0-road-safety",
+    "id": "classif-cat-large-0-road-safety",
+    "task_type": "binclass",
+    "train_size": 50000,
+    "val_size": 18528,
+    "test_size": 43234,
+    "n_num_features": 29,
+    "n_cat_features": 3
+}
