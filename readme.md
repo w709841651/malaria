@@ -1,14 +1,20 @@
 1.1clone: download software and data
-1.2creat_dataset.ipynb:  creat .npy files according to the readme file 
+
+1.2creat_dataset.ipynb:  creat .npy files according to the readme file
+
 my_dataset:        my own dataset 
+
 classif-cat-large-0-road-safety: their dataset(can operate normally)
+
 0-kl-tuning.toml:  this file was copied from exp/tabr/why/classif-cat-large-0-road-safety/0-tuning.toml and i only changed the path 
 
-run:   CUDA_VISIBLE_DEVICES=0 srun -p 10-10-10-17 python bin/go.py exp/0-kl-tuning.toml --force
-
+run:
+```
+CUDA_VISIBLE_DEVICES=0 srun -p 10-10-10-17 python bin/go.py exp/0-kl-tuning.toml --force
+```
 error: 
 
-
+```
 Matplotlib created a temporary config/cache directory at /tmp/matplotlib-foqdkfgb because the default path (/home/zy/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
 Removing the existing output
 [I 2024-02-06 17:17:04,365] A new study created in memory with name: no-name-c6631399-b50f-4605-9080-a215a5d00e62
@@ -128,3 +134,4 @@ Traceback (most recent call last):
     f'(val) {metrics["val"]["score"]:.3f}'
 KeyError: 'val'
 Faiss assertion 'err == cudaSuccess' failed in virtual void faiss::gpu::StandardGpuResourcesImpl::deallocMemory(int, void*) at /home/conda/feedstock_root/build_artifacts/faiss-split_1636459943780/work/faiss/gpu/StandardGpuResources.cpp:518; details: Failed to cudaFree pointer 0x7f45d6075600 (error 710 device-side assert triggered)
+```
