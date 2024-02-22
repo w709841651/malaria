@@ -15,7 +15,7 @@ context_size = 96
 [space.data]
 seed = 0
 cache = true
-path = ":data/my_dataset"
+path = ":data/malaria"
 num_policy = "quantile"
 cat_policy = "ordinal"
 y_policy = "__null__"
