@@ -1,6 +1,13 @@
 ### TAB-DDPM GUIDELINE https://github.com/yandex-research/tab-ddpm
 
-dataset:malaria
+add malaria dataset to the data folder
 
+To run TabDDPM tuning:
+```
+python scripts/tune_ddpm.py malaria 248 synthetic mlp ddpm_tune --eval_seeds
+```
 
-python scripts/tune_ddpm.py churn2 6500 synthetic catboost ddpm_tune --eval_seeds
+To run TabDDPM pipeline:
+```
+python scripts/pipeline.py --config exp/malaria/ddpm_mlp_best/config.toml --train --sample
+```
