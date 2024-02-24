@@ -7,8 +7,8 @@ wget https://huggingface.co/datasets/puhsu/tabular-benchmarks/resolve/main/data.
 tar -xvf tabular-dl-tabr.tar.gz
 ```
 
+dataset: malaria
 To creat a new dataset:
-
 run tabr_data_preprocess.ipynb       #creat .npy files in the malaria folder 
 
 
