@@ -1,7 +1,7 @@
 ### TAB-DDPM GUIDELINE https://github.com/yandex-research/tab-ddpm
 
 ### DATASET:
-Add malaria dataset to tab-ddpm/data.
+malaria
 
 ### To run TabDDPM tuning:
 ```
