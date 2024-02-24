@@ -15,6 +15,8 @@ run tabr_data_preprocess.ipynb to creat .npy files
 
 
 To reproduce the results：
+
+Add 0-tuning.toml to exp/malaria.
 ```
 python bin/go.py exp/malaria/0-tuning.toml --force
 ```
