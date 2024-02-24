@@ -1,4 +1,0 @@
-#software & data
-git clone https://github.com/yandex-research/tabular-dl-tabr
-wget https://huggingface.co/datasets/puhsu/tabular-benchmarks/resolve/main/data.tar -O tabular-dl-tabr.tar.gz
-tar -xvf tabular-dl-tabr.tar.gz
