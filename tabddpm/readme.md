@@ -1,6 +1,6 @@
 ### TAB-DDPM GUIDELINE https://github.com/yandex-research/tab-ddpm
 
-add malaria dataset to the data folder
+Add malaria dataset to tab-ddpm/data.
 
 To run TabDDPM tuning:
 ```
