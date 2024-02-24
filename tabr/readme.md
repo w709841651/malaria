@@ -7,7 +7,7 @@ wget https://huggingface.co/datasets/puhsu/tabular-benchmarks/resolve/main/data.
 tar -xvf tabular-dl-tabr.tar.gz
 ```
 
-dataset: malaria
+Add malaria dataset to tabular-dl-tabr/data.
 
 To creat a new dataset:
 
