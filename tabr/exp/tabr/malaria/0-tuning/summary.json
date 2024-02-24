@@ -1,0 +1,19 @@
+{
+    "function": "bin.tune.main",
+    "best": {
+        "function": "bin.tabr.main",
+        "gpus": [],
+        "n_parameters": 38746,
+        "best_epoch": 14,
+        "tuning_time": "0:03:45",
+        "trial_id": 7,
+        "scores": {
+            "train": 0.7096774193548387,
+            "val": 0.6666666666666666,
+            "test": 0.6666666666666666
+        },
+        "time": "0:00:04"
+    },
+    "n_completed_trials": 100,
+    "time": "0:44:30"
+}
