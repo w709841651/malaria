@@ -128,7 +128,6 @@ eval_set = [(x_train, y_train), (x_test, y_test)]
 model=xgb.XGBClassifier(**params_7
                         
     )
-#early_stopping_rounds=20,
 model.fit(x_train,y_train,eval_set=eval_set, verbose=True,eval_metric=["error", "logloss"])
 
 from matplotlib import pyplot
@@ -177,3 +176,24 @@ pyplot.ylabel('Classification Error')
 pyplot.title('XGBoost Classification Error')
 # pyplot.show()
 pyplot.savefig(trial_dir+'/classification_error.pdf')
+
+from sklearn.model_selection import cross_val_score,KFold
+from sklearn.metrics import make_scorer, recall_score
+
+score = model.score(x_train, y_train) 
+print("Training score: ", score)
+scores = cross_val_score(model, x_train, y_train,cv=10)
+print(np.mean(scores), np.std(scores))
+print(scores)
+print(classification_report(y_test, Y_pred))
+print("Mean cross-validation score: %.2f" % scores.mean())
+
+scorer = make_scorer(recall_score)
+scores = cross_val_score(model, x_train, y_train, cv=5, scoring=scorer)
+print(scores)
+print("Mean cross-validation score (Recall): %.2f" % scores.mean())
+
+scorer = make_scorer(f1_score)
+scores = cross_val_score(model, x_train, y_train, cv=5, scoring=scorer)
+print(scores)
+print("Mean cross-validation score (f1): %.2f" % scores.mean())
