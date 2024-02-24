@@ -10,6 +10,7 @@ tar -xvf tabular-dl-tabr.tar.gz
 dataset: malaria
 
 To creat a new dataset:
+
 run tabr_data_preprocess.ipynb to creat .npy files  
 
 
