@@ -1,0 +1,12 @@
+{
+    "name": "malaria",
+    "id": "malaria",
+    "task_type": "binclass",
+    "train_size": 248,
+    "val_size": 63,
+    "test_size": 2,
+    "n_num_features": 18,
+    "n_cat_features": 0,
+    "n_bin_features": 0
+}
+
