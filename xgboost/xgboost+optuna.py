@@ -16,7 +16,6 @@ from sklearn.metrics import roc_curve, auc
 from sklearn.metrics import roc_auc_score
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
-# imports
 import pandas as pd
 import numpy as np
 
@@ -45,10 +44,7 @@ data = pd.read_csv(
 )
 
 target = data[['class01']]
-features = data.drop('class01', axis=1) 
-features = features.drop('Tail.Length', axis=1)
-features = features.drop('Wing.Length', axis=1)
-features = features.drop('Prevalence', axis=1) 
+features = data.drop(['class01','Tail.Length','Wing.Length','Prevalence'], axis=1) 
 features.head()
 
 
@@ -87,7 +83,6 @@ def objective(trial):
 #         'subsample': trial.suggest_uniform('subsample', 0.85, 0.9),
 #         'n_estimators': trial.suggest_int('n_estimators', 500,2200),
 #         'scale_pos_weight': trial.suggest_uniform('scale_pos_weight', 2,2),
-#         'random_state':trial.suggest_int('random_state',1,40),
 #         'nthread': 32
 #     } 
     model = xgb.XGBClassifier(**param)
